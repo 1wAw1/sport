@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>SPORT NEWS</title>
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png">
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Football</a></li>
+                    <li><a href="#">Basketball</a></li>
+                    <li><a href="#">Rugby</a></li>
+                    <li><a href="#">Tennis</a></li>
+                    <!--<li><a href="#">Volleyball</a></li>
+                    <li><a href="#">Cricket</a></li>
+                    <li><a href="#">Baseball</a></li>
+                    <li><a href="#">Golf</a></li>
+                    <li><a href="#">Boxing</a></li>-->
+                </ul>
+                
+            </div>
+        </nav>
+        <div class="information">
+            <div class="overlay"></div>
+            <img src="images/Sports.png" class="Sports">
+            <div id="circle">
+                <div class="feature erTi">
+                    <img src="images/Football.png">
+                    <div>
+                        <h1>Football</h1>
+                        <p>Top League News</p>
+                    </div>
+                </div>
+                <div class="feature ori">
+                    <img src="images/Basketball.png">
+                    <div>
+                        <h1>Basketball</h1>
+                        <p>Top League News</p>
+                    </div>
+                </div>
+                <div class="feature sami">
+                    <img src="images/Rugby.png">
+                    <div>
+                        <h1>Rugby</h1>
+                        <p>Top League News</p>
+                    </div>
+                </div>
+                <div class="feature oTxi">
+                    <img src="images/Tennis.png">
+                    <div>
+                        <h1>Tennis</h1>
+                        <p>Top League News</p>
+                    </div>
+                </div>
+                <!--<div class="feature xuTi">
+                    <img src="images/Volleyball.png">
+                </div>
+                <div class="feature eqvsi">
+                    <img src="images/Cricket.png">
+                </div>
+                <div class="feature Svidi">
+                    <img src="images/Baseball.png">
+                </div>
+                <div class="feature rva">
+                    <img src="images/Golf.png">
+                </div>
+                <div class="feature cxra">
+                    <img src="images/Boxing.png">
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <div class="controls">
+        <img src="images/arrow.png" id="upBtn">
+        <h3>Features</h3>
+        <img src="images/arrow.png" id="downBtn">
+    </div>
+    <script>
+        var circle=document.getElementById("circle")
+        var upBtn=document.getElementById("upBtn")
+        var downBtn=document.getElementById("downBtn")
+        
+        var rotateValue = circle.style.transform;
+        var rotateSum;
+
+        upBtn.onclick = function()
+        {
+            rotateSum = rotateValue + "rotate(-90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum; 
+        }
+        downBtn.onclick = function()
+        {
+            rotateSum = rotateValue + "rotate(90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum; 
+        }
+        
+
+    </script>
+</body>
+</html>
